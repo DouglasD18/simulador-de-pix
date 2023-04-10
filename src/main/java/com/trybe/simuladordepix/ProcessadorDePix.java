@@ -20,11 +20,6 @@ public class ProcessadorDePix {
    * @throws ErroDePix Erro de aplicação, caso ocorra qualquer inconformidade.
    * @throws IOException Caso aconteça algum problema relacionado à comunicação entre o aplicativo e
    *         o servidor na nuvem.
-   * @throws ErroValorNaoPositivo O valor não pode ser negativo.
-   * @throws ErroChaveEmBranco A chave não pode estar em branco.
-   * @throws ErroSaldoInsuficiente O saldo deve ser maior ou igual ao valor.
-   * @throws ErroChaveNaoEncontrada A chaave deve existir.
-   * @throws ErroInterno Erro de aplicação.
    */
   public void executarPix(int valor, String chave) throws ErroDePix, IOException {
     if (valor <= 0) {
